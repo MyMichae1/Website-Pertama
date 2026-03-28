@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All jobs</title>
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css/style.css">
+</head>
+<body>
+    
+
+
+<!--header section starts-->
+
+<header class="header">
+    <section class="flex">
+
+        <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+        <a href="home.html" class="logo"><i class="fas fa-briefcase"></i>
+        Job.Id</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about us</a>
+            <a href="Jobs.html">all jobs</a>
+            <a href="contact.html">contact</a>
+            <a href="login.html">account</a>
+        </nav>
+
+        <a href="#" class="btn" style="margin-top: 0;">post jobs</a>
+
+    </section>
+
+</header>
+
+<!--headerection ends-->
+
+<!--job filter section stars-->
+
+<section class="job-filter">
+
+<h1 class="heading">filter jobs</h1>
+
+<form action="" method="post">
+    <div class="flex">
+        <div class="box">
+            <p>job-title <span>*</span></p>
+            <input type="text" name="title" placeholder="keyword, category or company" required maxlength="20"
+            class="input">
+        </div>
+        <div class="box">
+            <p>job location</p>
+            <input type="text" name="location" placeholder="city, state or country" required maxlength="50"
+            class="input">
+        </div>
+    </div>
+    <div class="dropdown-container">
+        <div class="dropdown">
+            <input type="text" readonly placeholder="date posted" name="date" maxlength="20" class="output">
+            <div class="lists">
+                <p class="items"></p>
+                <p class="items">today</p>
+                <p class="items">3 days ago</p>
+                <p class="items">7 days ago</p>
+                <p class="items">10 days ago</p>
+                <p class="items">15 days ago</p>
+                <p class="items">30 days ago</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <input type="text" readonly name="date" placeholder="estimated payment" maxlength="20" class="output">
+            <div class="lists">
+                <p class="items"></p>
+                <p class="items">1m or less</p>
+                <p class="items">5m - 10m</p>
+                <p class="items">10m - 20m</p>
+                <p class="items">20m - 30m</p>
+                <p class="items">30m - 40m</p>
+                <p class="items">40m - 50m</p>
+                <p class="items">50m - 60m</p>
+                <p class="items">60m - 70m</p>
+                <p class="items">70m - 80m</p>
+                <p class="items">80m - 90m</p>
+                <p class="items">90m - 100m</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <input type="text" readonly name="date" placeholder="education level" maxlength="20" class="output">
+            <div class="lists">
+                <p class="items"></p>
+                <p class="items">10th pass</p>
+                <p class="items">12th pass</p>
+                <p class="items">bachlelor's degree</p>
+                <p class="items">master's degree</p>
+                <p class="items">diploma</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <input type="text" readonly name="date" placeholder="deadline" maxlength="20" class="output">
+            <div class="lists">
+                <p class="items"></p>
+                <p class="items">30 days</p>
+                <p class="items">40 days</p>
+                <p class="items">50 days</p>
+                <p class="items">60 days</p>
+                <p class="items">75 days</p>
+                <p class="items">77 days</p>
+                <p class="items">100 days</p>
+            </div>
+        </div>
+    </div>
+</form>
+
+</section>
+
+<!--job filter section ends-->
+
+<!--all jobs section starts-->
+
+<section class="jobs-container">
+
+    <h1 class="heading">all jobs</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon1.jpg" alt="">
+                <div>
+                    <h3>IT infosys co.</h3>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Web Development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Jakarta, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 10m-25m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>40 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon2.jpg" alt="">
+                <div>
+                    <h3>all media itd</h3>
+                    <p>3 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Software Development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Semarang, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 15m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>60 Days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job2.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon3.jpg" alt="">
+                <div>
+                    <h3>software solutions</h3>
+                    <p>posted today</p>
+                </div>
+            </div>
+            <h3 class="job-title">IT Consulting</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Surabaya, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 3m-4m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>90 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job3.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon4.jpg" alt="">
+                <div>
+                    <h3>IT world</h3>
+                    <p>20 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">SEO Specialist</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Jambi, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 7m-15m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>75 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job4.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon5.jpg" alt="">
+                <div>
+                    <h3>info statics</h3>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Cybersecurity</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Palangkaraya, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span>20m</span></p>
+                <p><i class="fas fa-briefcase"></i><span>freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>100 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job5.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon6.jpg" alt="">
+                <div>
+                    <h3>mass idea</h3>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">PHP development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Medan, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span>1m-10m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>50 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job6.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+    
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon7.jpg" alt="">
+                <div>
+                    <h3>info statics</h3>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Mobile App Development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Bandung, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 12m-18m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>70 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job7.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon8.jpg" alt="">
+                <div>
+                    <h3>software solutions</h3>
+                    <p>posted today</p>
+                </div>
+            </div>
+            <h3 class="job-title">Graphic Design</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Yogyakarta, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 4m-5m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>77 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job8.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon9.jpg" alt="">
+                <div>
+                    <h3>it infosys co.</h3>
+                    <p>posted today</p>
+                </div>
+            </div>
+            <h3 class="job-title">IT Consulting</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span> Bali, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 5m-8m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>60 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job9.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon10.jpg" alt="">
+                <div>
+                    <h3>C++ programmer</h3>
+                    <p>posted today</p>
+                </div>
+            </div>
+            <h3 class="job-title">Data Analysis</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Palembang, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 3m-12m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>60 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job10.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon11.jpg" alt="">
+                <div>
+                    <h3>web developer</h3>
+                    <p>3 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Web Development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Manado, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 15m-30m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>30 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job11.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon12.jpg" alt="">
+                <div>
+                    <h3>devops engineer</h3>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Python Development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Bandar Lampung, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 20m-40m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>30 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job12.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon10.jpg" alt="">
+                <div>
+                    <h3>C++ programmer</h3>
+                    <p>posted today</p>
+                </div>
+            </div>
+            <h3 class="job-title">Data Analysis</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Palembang, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 3m-12m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>60 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job10.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon11.jpg" alt="">
+                <div>
+                    <h3>web developer</h3>
+                    <p>3 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Web Development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Manado, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 15m-30m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>30 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job11.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="company">
+                <img src="lmages/icon12.jpg" alt="">
+                <div>
+                    <h3>devops engineer</h3>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <h3 class="job-title">Python Development</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span></span>Bandar Lampung, Indonesia</p>
+            <div class="tags">
+                <p><i class="fas fa-rupiah-sign"></i><span> 20m-40m</span></p>
+                <p><i class="fas fa-briefcase"></i><span> freelance</span></p>
+                <p><i class="fas fa-clock"></i><span>30 days</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job12.html" class="btn">view detalis</a>
+                <button type="submit" class="far fa-heart" name="save"></button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="Jobs.html" class="btn">view all</a>
+    </div>
+
+        
+
+</section>
+
+<!--all jobs section ends-->
+
+<!--footer section starts-->
+
+<footer class="footer">
+
+    <section class="grid">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"><i class="fas fa-angle-right"></i>home</a> 
+            <a href="about.html"><i class="fas fa-angle-right"></i>about</a>
+            <a href="jobs.html"><i class="fas fa-angle-right"></i>all jobs</a>
+            <a href="contact.html"><i class="fas fa-angle-right"></i>contact us</a>  
+            <a href="#"><i class="fas fa-angle-right"></i>filter search</a> 
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>  
+            <a href="#"><i class="fas fa-angle-right"></i>account</a> 
+            <a href="login.html"><i class="fas fa-angle-right"></i>login</a> 
+            <a href="register.html"><i class="fas fa-angle-right"></i>register</a> 
+            <a href="#"><i class="fas fa-angle-right"></i>post job</a> 
+            <a href="#"><i class="fas fa-angle-right"></i>dashboard</a> 
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+        </div>
+
+    </section>
+
+    <div class="credit">&copy; copyright @ 2023 by<span> Job.Id </span>| all right reserverd!</div>
+    
+</footer>
+
+<!--footer section ends-->
+
+
+
+<script>
+
+let dropdown_items = document.querySelectorAll('.job-filter form .dropdown-container .dropdown .lists .items');
+
+dropdown_items.forEach(items =>{
+    items.onclick = () =>{
+        items_parent = items.parentElement.parentElement;
+        let output = items_parent.querySelector('.output');
+        output.value = items.innerText;
+    }
+});
+
+</script>
+
+
+</body>
+</html>
